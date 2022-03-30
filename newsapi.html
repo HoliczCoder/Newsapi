@@ -49,7 +49,8 @@
                     console.log(realdata)
                     for (i = 0; i <= realdata.length - 1; i++) {
                         const listnode = document.createElement("li")
-                        listnode.innerHTML = `<h2>${realdata[i].author}</h2>
+                        listnode.innerHTML = `<h2><img src="${realdata[i].urlToImage}"></h2>
+                        <h2>${realdata[i].author}</h2>
                                         <p>${realdata[i].content}</p>`
                         ulNode.appendChild(listnode);
                     }
